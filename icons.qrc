@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/base-de-datos-relacional-03.jpg</file>
+    <file>icons/cerrar.png</file>
+    <file>icons/corteza.jpg</file>
+    <file>icons/ELK.jpg</file>
+    <file>icons/fabajo.png</file>
+    <file>icons/max.png</file>
+    <file>icons/menu.png</file>
+    <file>icons/min.png</file>
+    <file>icons/MISP.jpg</file>
+    <file>icons/php.png</file>
+    <file>icons/Portada.png</file>
+  </qresource>
+</RCC>
