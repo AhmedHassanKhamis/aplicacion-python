@@ -70,25 +70,46 @@ class MiApp(QtWidgets.QMainWindow):
 	#Funciones para abrir paginas de google
 
 	def ELK(self):
-		os.system("start chrome https://www.elastic.co/es/what-is/elk-stack")
+		if os.name == "posix":
+			os.system("firefox https://www.elastic.co/es/what-is/elk-stack")
+		else:
+			os.system("start chrome https://www.elastic.co/es/what-is/elk-stack")
 	
 	def MISP(self):
-		os.system("start chrome https://www.misp-project.org")
+		if os.name == "posix":
+			os.system("firefox https://www.misp-project.org")
+		else:
+			os.system("start chrome https://www.misp-project.org")
 
 	def CTZ(self):
-		os.system("start chrome https://cortezaproject.org")
+		if os.name == "posix":
+			os.system("firefox https://cortezaproject.org")
+		else:
+			os.system("start chrome https://cortezaproject.org")
 
 	def PHP(self):
-		os.system("start chrome https://www.php.net")
+		if os.name == "posix":
+			os.system("firefox https://www.php.net")
+		else:
+			os.system("start chrome https://www.php.net")
 
 	def vd1(self):
-		os.system("start chrome https://www.youtube.com/watch?v=MhC3ZFY5dNI")
+		if os.name == "posix":
+			os.system("firefox https://www.youtube.com/watch?v=MhC3ZFY5dNI")
+		else:
+			os.system("start chrome https://www.youtube.com/watch?v=MhC3ZFY5dNI")
 
 	def vd2(self):
-		os.system("start chrome https://www.youtube.com/watch?v=lCN4n8CNkNM")
+		if os.name == "posix":
+			os.system("firefox https://www.youtube.com/watch?v=lCN4n8CNkNM")
+		else:
+			os.system("start chrome https://www.youtube.com/watch?v=lCN4n8CNkNM")
 
 	def vd3(self):
-		os.system("start chrome https://www.youtube.com/watch?v=S-CfD_FW3Co")
+		if os.name == "posix":
+			os.system("firefox https://www.youtube.com/watch?v=S-CfD_FW3Co")
+		else:
+			os.system("start chrome https://www.youtube.com/watch?v=S-CfD_FW3Co")
 		
 	def abrir1(self):
 		os.system("Documentacion_ELK.pdf")
