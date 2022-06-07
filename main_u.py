@@ -141,12 +141,15 @@ class MiApp(QtWidgets.QMainWindow):
 	def dock_misp(self):
 		os.chdir('docker-misp')
 		os.system("docker-compose up")
+		os.chdir('..')
 
 		
 
 	def dock_ctz(self):
 		os.chdir('corteza')
 		os.system("docker-compose up -d")
+		os.chdir('..')
+
 
 
 	
