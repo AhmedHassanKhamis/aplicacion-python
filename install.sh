@@ -17,6 +17,6 @@ chmod +x /usr/local/bin/docker-compose
 sysctl -w vm.max_map_count=262144
 echo "127.0.0.1	dominio.cm" >> /etc/hosts
 service apache2 stop && service nginx stop
-read -p "usuario: " usuario
+read -p "usuario:" usuario
 usermod -aG docker $usuario
 id -nG
