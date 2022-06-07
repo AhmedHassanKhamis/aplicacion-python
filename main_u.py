@@ -130,18 +130,13 @@ class MiApp(QtWidgets.QMainWindow):
 
 
 	def dock_misp(self):
-		os.system("git clone https://github.com/coolacid/docker-misp.git")
 		os.chdir('docker-misp')
-		if os.name == "posix":
-			os.system("sudo service apache2 stop && sudo service nginx stop")
 		os.system("docker-compose up")
 
 		
 
 	def dock_ctz(self):
-		os.system("git clone https://github.com/ahmedhassank/corteza.git")
 		os.chdir('corteza')
-		os.system("./install.sh")
 		os.system("docker-compose up -d")
 
 
