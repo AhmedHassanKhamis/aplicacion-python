@@ -11,3 +11,4 @@ apt install docker-ce -y
 curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 sysctl -w vm.max_map_count=262144
+echo "127.0.0.1	dominio.cm" >> /etc/hosts
