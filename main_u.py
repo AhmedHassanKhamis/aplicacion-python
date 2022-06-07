@@ -124,7 +124,6 @@ class MiApp(QtWidgets.QMainWindow):
 
 	def dock_elk(self):
 		os.system("docker pull ahmedhassank/elk:latest")
-		os.system("sysctl -w vm.max_map_count=262144")
 		os.system("docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk ahmedhassank/elk")
 		os.system("docker start elk")
 
