@@ -37,7 +37,7 @@ class MiApp(QtWidgets.QMainWindow):
 		self.ui.bt_ter1.clicked.connect(self.abrir1)
 		self.ui.bt_ter2.clicked.connect(self.abrir2)
 		self.ui.bt_ter3.clicked.connect(self.abrir3)
-		self.ui.bt_ter5.clicked.connect(self.abrir1)
+		self.ui.bt_ter5.clicked.connect(self.abrir4)
 
 		#Abrir los dockers
 		self.ui.bt_prac1.clicked.connect(self.dock_elk)
@@ -128,6 +128,12 @@ class MiApp(QtWidgets.QMainWindow):
 			os.system("firefox https://github.com/ahmedhassank/documentacion/blob/main/Corteza.pdf")
 		else:
 			os.system("start chrome https://github.com/ahmedhassank/documentacion/blob/main/Corteza.pdf")
+			
+	def abrir4(self):
+		if os.name == "posix":
+			os.system("firefox https://github.com/ahmedhassank/documentacion/blob/main/juego_php_mysql.pdf")
+		else:
+			os.system("start chrome https://github.com/ahmedhassank/documentacion/blob/main/juego_php_mysql.pdf")
 
 	#Funciones para abrir los contenedores de las herramientas
 
