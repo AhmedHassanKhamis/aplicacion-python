@@ -112,13 +112,22 @@ class MiApp(QtWidgets.QMainWindow):
 			os.system("start chrome https://www.youtube.com/watch?v=S-CfD_FW3Co")
 		
 	def abrir1(self):
-		os.system("Documentacion_ELK.pdf")
+		if os.name == "posix":
+			os.system("firefox https://github.com/ahmedhassank/documentacion/blob/main/Documentacion_ELK.pdf")
+		else:
+			os.system("start chrome https://github.com/ahmedhassank/documentacion/blob/main/Documentacion_ELK.pdf")
 
 	def abrir2(self):
-		os.system("MISP.pdf")
+		if os.name == "posix":
+			os.system("firefox https://github.com/ahmedhassank/documentacion/blob/main/MISP.pdf")
+		else:
+			os.system("start chrome https://github.com/ahmedhassank/documentacion/blob/main/MISP.pdf")
 	
 	def abrir3(self):
-		os.system("Corteza.pdf")
+		if os.name == "posix":
+			os.system("firefox https://github.com/ahmedhassank/documentacion/blob/main/Corteza.pdf")
+		else:
+			os.system("start chrome https://github.com/ahmedhassank/documentacion/blob/main/Corteza.pdf")
 
 	#Funciones para abrir los contenedores de las herramientas
 
