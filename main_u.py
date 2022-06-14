@@ -1,6 +1,3 @@
-# @autor: Magno Efren
-# Youtube: https://www.youtube.com/c/MagnoEfren
-
 import sys
 from menu_u import *
 from PyQt5 import QtCore
